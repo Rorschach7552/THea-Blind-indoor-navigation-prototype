@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Voice Speed Control -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voice Speed Control"
+            android:padding="8dp" />
+        <SeekBar
+            android:id="@+id/voiceSpeedSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contact Information"
+            android:padding="8dp" />
+        <EditText
+            android:id="@+id/primaryContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Primary Emergency Contact"
+            android:inputType="phone"
+            android:padding="12dp" />
+        <EditText
+            android:id="@+id/secondaryContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Secondary Emergency Contact"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+        <!-- Navigation Preferences -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigation Preferences"
+            android:padding="8dp" />
+        <CheckBox
+            android:id="@+id/preferAvoidStairs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefer to Avoid Stairs" />
+
+        <!-- Accessibility Customization -->
+
+        <CheckBox
+            android:id="@+id/preferPedestrianPaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefer Pedestrian Paths" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haptic Feedback Intensity"
+            android:padding="8dp" />
+        <SeekBar
+            android:id="@+id/hapticFeedbackSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50" />
+
+        <!-- Medical Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical Information"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/medicalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Enter Medical Information"
+            android:padding="12dp"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:lines="5"
+            android:maxLines="10"
+            android:scrollbars="vertical" />
+
+
+        <!-- Add other UI components as needed -->
+
+    </LinearLayout>
+</ScrollView>
